@@ -1,0 +1,31 @@
+Return-Path: <rob2368101@maricopa.edu>
+Received: from mail-pj1-f42.google.com (209.85.216.42) by
+ CO1PEPF00012E61.mail.protection.outlook.com (10.167.249.70) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.9587.10
+ via Frontend Transport; Wed, 4 Feb 2026 12:54:52 +0000
+
+Authentication-Results: spf=pass (sender IP is 209.85.216.42)
+ smtp.mailfrom=maricopa.edu; dkim=pass (signature was verified)
+ header.d=maricopa.edu; dmarc=pass action=none
+ header.from=maricopa.edu; compauth=pass reason=100
+
+Received-SPF: Pass (protection.outlook.com: domain of maricopa.edu designates
+ 209.85.216.42 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.216.42; helo=mail-pj1-f42.google.com;
+
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=maricopa.edu; s=google; t=1770209692; x=1770814492;
+ h=to:subject:message-id:date:mime-version:from;
+ bh=2ORmFXo2IyBUVli5fS7J47BfSgSKtsI5rUMrDL2lZ1w=;
+ b=cpaL9DQGzXi879doIKSZXY7CowsJHjaWZ+3aBN2owbppf99L6dHs/uGV96ceOlMdXH...
+
+X-Received: by gmailapi.google.com with HTTPREST; Wed, 4 Feb 2026 04:54:50 -0800
+From: Marilyn Greenwood <ROB2368101@maricopa.edu>
+Date: Wed, 4 Feb 2026 04:54:50 -0800
+Message-ID: <CAOEZU5XzMY0+-zM+2jWif9A7GyOyeAGVTs2-O-XpDX6W9ajiyg@mail.gmail.com>
+Subject: Performance Feb 4
+To: kaesha potter <[REDACTED]@outlook.com>
+
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0; PCL:2; 
+X-Custom-Analysis: Verified Account Compromise (True Account Compromise)
