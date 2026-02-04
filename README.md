@@ -30,3 +30,28 @@ I utilized a custom PowerShell script to calculate the file hash for cross-refer
 ```powershell
 # Generate SHA256 Hash for file integrity verification
 Get-FileHash -Path ".\26-82161805190996.docx" -Algorithm SHA256
+## 4. Incident Response & Remediation
+Following the **NIST Incident Response Lifecycle (SP 800-61)**, I moved from Detection into the **Coordination and Containment** phase. 
+
+### A. External Communication
+I drafted and submitted a formal **Security Incident Report** to the Maricopa Community College Information Security Team. This report included:
+- The compromised account ID (`ROB2368101`).
+- The verified Source IP (`209.85.216.42`).
+- A request for token revocation based on the identified `HTTPREST` injection method.
+
+### B. Defensive Posture
+- **Local Isolation:** The malicious attachment was moved to a password-protected ZIP archive for forensic storage.
+- **Verification:** I utilized PowerShell to verify that no unauthorized outbound connections were established during the analysis phase.
+
+
+
+## 5. About the Author
+**Lars Stevenson** *Cybersecurity & Infrastructure Analyst*
+
+I am a technical professional with a focus on SOC operations and infrastructure security. My background includes formal training from the **University of Toronto's Cybersecurity Bootcamp** and a portfolio of industry certifications including **CompTIA Security+, ISC2 CC, and SSCP**.
+
+### Public Speaking & Community Engagement
+I am an active member of the security community and have previously presented at **BSides**. 
+- **[Link to your BSides Presentation/Video]**
+- **GitHub Portfolio:** [Link to your main GitHub page]
+- **LinkedIn:** [Link to your LinkedIn Profile]
