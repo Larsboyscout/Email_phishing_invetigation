@@ -10,7 +10,7 @@ This project documents the identification, analysis, and reporting of a sophisti
 ## 2. Evidence Collection (IOCs)
 * **Sender:** Marilyn Greenwood (`ROB2368101@maricopa.edu`)
 * **Recipient Name (Mismatched):** Kaesha Potter
-* **Target Email:** `larsstevenson@outlook.com`
+* **Target Email:** `My email address(redacted for security)`
 * **Sender IP:** `209.85.216.42` (Authorized Google/Maricopa Infrastructure)
 * **Subject:** "Performance Feb 4"
 * **Attachment:** `26-82161805190996.docx` (85 KB)
