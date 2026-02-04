@@ -25,31 +25,12 @@ Analysis of the raw SMTP headers revealed that the email successfully bypassed s
 
 ### B. Forensic Scripting (PowerShell)
 To inspect the file without execution, I utilized PowerShell to generate a cryptographic hash for reputation checking and to inspect file streams for hidden data.
-powershell
+````powershell
 # Generate SHA256 Hash for file integrity verification
 Get-FileHash -Path ".\26-82161805190996.docx" -Algorithm SHA256
 
 # Check for Alternative Data Streams (ADS) used to hide malicious payloads
 Get-Item -Path ".\26-82161805190996.docx" -Stream *
-
-
-
-#4. Incident Response & Remediation
-Following the NIST Incident Response Lifecycle (SP 800-61), I moved from Detection into the Coordination and Containment phase.
-
-A. External Stakeholder Notification
-I submitted a formal Security Incident Report to the Maricopa Community College Information Security Team. Key data provided included the verified source IP and the specific account ID to facilitate token revocation and account lockout.
-
-B. Defensive Posture
-Local Isolation: The malicious attachment was quarantined in a password-protected archive.
-
-Environment Verification: PowerShell was used to ensure no unauthorized persistence or outbound connections were established.
-
-5. About the Author
-Lars Stevenson | Cybersecurity & Infrastructure Analyst
-
-I am a technical professional focused on SOC operations and infrastructure security. My background includes formal training from the University of Toronto's Cybersecurity Bootcamp and a portfolio of industry certifications including CompTIA Security+
-
 
 
 
